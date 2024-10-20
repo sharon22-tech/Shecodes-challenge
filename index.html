@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form handling</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <script src="src/index.js"></script>
+    <!-- Form Section -->
+    <form id="user-form">
+      <h2>User Information Form</h2>
+      <label>Name:</label>
+      <input type="text" id="name" required /><br /><br />
+
+      <label>Email:</label>
+      <input type="email" id="email" required /><br /><br />
+
+      <label>Preferred Contact Method:</label>
+      <select id="contact-method" required>
+        <option value="">Select Option</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option></select
+      ><br /><br />
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone-number" /><br /><br />
+
+      <label>Accept Terms and Conditions:</label>
+      <input type="checkbox" id="terms" required /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Form Summary Section -->
+    <h2>Form Summary</h2>
+    <div id="form-summary"></div>
+
+    <!-- Error Message Section -->
+    <div id="error-message"></div>
+  </body>
+</html>
